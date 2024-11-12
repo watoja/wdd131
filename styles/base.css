@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: yellow;
+}
+
+/* Navigation */
+.nav {
+    background-color: #120c0c;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.nav li {
+    margin: 0.5rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: yellow;
+    border-radius: 5px;
+    color: black;
+}
+
+/* Main styling for layout */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+/* Card layout */
+#card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+#card2 {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* About Me, Uganda, and Web Dev Resources sections */
+.about h2, .country h2, .sources h2 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.about p, .country p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.about img, .country img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Web Dev Resources section */
+#card2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#card2 ul li {
+    margin: 0.5rem 0;
+}
+
+#card2 ul a {
+    color: #333;
+    text-decoration: none;
+}
+
+#card2 ul a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap; /* Keeps horizontal layout but allows wrapping */
+    }
+    
+    #card {
+        width: 100%; /* Takes full width on smaller screens */
+    }
+
+    #card2 {
+        width: 100%; /* Takes full width on smaller screens */
+    }
+}

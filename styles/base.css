@@ -17,10 +17,11 @@ body {
 
 /* Header styling */
 header {
-    background-color: #333;
+    background-color: #4e3131;
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position-anchor: fixed;
 }
 
 header h1 {
@@ -88,11 +89,14 @@ main {
 
 /* About Me, Uganda, and Web Dev Resources sections */
 .about h2, .country h2, .sources h2 {
+    background: #4e3131;
     font-family: 'Lora', serif;
     font-weight: 700;
     font-size: 1.5em;
     margin-bottom: 0.5rem;
-    justify-content: center;
+    color: yellow;
+    padding-top: 1rem;
+    border-top-left-radius: 20px;
 }
 
 .about p, .country p {
@@ -100,13 +104,25 @@ main {
     font-family: 'Roboto', sans-serif;
     color: #555;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
-.about img, .country img {
-    display: block;
+.about img{
+    display: flex;
+    float: right;
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+#country img {
+    display: flex;
+    float: left;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 5px;
 }
 
 /* Web Dev Resources section */
@@ -121,9 +137,10 @@ main {
 }
 
 #card2 ul a {
-    color: #333;
+    color: rgb(106, 64, 234)1ea;
     text-decoration: none;
 }
+
 
 #card2 ul a:hover {
     color: #007BFF;
@@ -132,8 +149,8 @@ main {
 
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #4e3131;
+    color: yellow;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;

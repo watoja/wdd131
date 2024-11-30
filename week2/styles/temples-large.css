@@ -3,7 +3,7 @@
     nav ul {
         flex-direction: row; /* Horizontal layout for large screens */
         justify-content:right;
-        padding-inline-start: 20px;
+        padding-inline-start: 20p;
         background-color: transparent; /* Match design preference */
     }
 

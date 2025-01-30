@@ -1,0 +1,37 @@
+ /* Hide hamburger on large screens */
+@media (min-width: 768px) {
+    #menu-btn {
+        display: none;
+    }
+/* Reset positioning  so that nav*/
+    nav {
+        position: static; 
+        width: auto;
+        background: none;
+
+    }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        background: none;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 15px;
+        justify-content: space-between;
+    }
+
+    nav ul li a:hover {
+        background-color: white;
+        color: #333; /* Dark text on hover */
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

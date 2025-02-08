@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header,
+footer {
+    background-color: #0f0d02;
+    color: yellow;
+    padding: 1em;
+    text-align: center;
+}
+
+hr {
+    border: 2px solid rgb(232, 229, 56);
+    box-shadow: rgba(20, 19, 19, 0.8) 0px 0px 10px;
+}
+
+header h1{
+    font-weight: 900;
+    padding: 0.5rem;
+}
+
+/*Body*/
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+section h2 {
+    color: #111212;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Open Sans", serif;
+}
+
+table {
+    margin: 1.5em auto;
+    border-collapse: collapse;
+    font-family: serif;
+}
+td{
+    padding: 0.2rem 0.2rem;
+}
+
+.fact{
+    text-align: right;
+    font-weight: 700;
+    padding-right: 0.5em;
+    font-size: 1rem;
+}
+
+.Value{
+    text-align: left;
+    font-size: 1rem;
+}
+
+/*Weather Icon*/
+.weather img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 0.5em;
+}
+
+/*Footer*/
+footer{
+    height: 5em;
+    font-family: "Open Sans", serif;
+}

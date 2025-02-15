@@ -1,3 +1,4 @@
+/* styles/hamburger.css */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -21,7 +22,21 @@ header {
     border: none;
     color: white;
     cursor: pointer;
-    display: block; /* Show on small screens */
+    display: block;
+}
+.card {
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5em;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.label {
+    color: black;
+    font-weight: 700;
 }
 
 nav {
@@ -30,20 +45,19 @@ nav {
     left: 0;
     width: 100%;
     background-color: #333;
+    display: none; /* Initially hidden */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
     flex-direction: column;
     width: 100%;
 }
 
-/* Show when the hamburger menu is clicked */
 nav ul.show {
-    display: flex; 
+    display: flex;
 }
 
 nav ul li {
@@ -51,7 +65,7 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: white;
     color: black;
 }
@@ -61,9 +75,8 @@ nav ul li a {
     text-decoration: none;
     display: block;
 }
-    
 
-.gallery {
+.co {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2px;

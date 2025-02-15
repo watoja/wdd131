@@ -1,14 +1,14 @@
  /* Hide hamburger on large screens */
-@media (min-width: 768px) {
+ @media (min-width: 700px) {
     #menu-btn {
         display: none;
-        color: aliceblue;
     }
 /* Reset positioning  so that nav*/
     nav {
         position: static; 
         width: auto;
         background: none;
+
     }
 
     nav ul {
@@ -23,32 +23,27 @@
         justify-content: space-between;
     }
 
-    nav ul li a{
-        color:white;
-    }
-
-    /*nav-menu*/
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 0.5rem 0.5rem;
-    background-color: #023047;
-    color: white;
-}
-
-#menu::before {
-    content: "≡";
-}
-
     nav ul li a:hover {
-        background-color: white;
-        color: #333; /* Dark text on hover */
+        background-color: black;
+        color: white; /* Dark text on hover */
         padding: 5px;
         border-radius: 5px;
     }
 
-
-   
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        background-color: #023047;
+        color: white;
+    }
+    menu::before {
+        content: "≡";
+    }
+    
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

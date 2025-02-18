@@ -1,15 +1,14 @@
-/* styles/hamburger.css */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding-bottom: 5px;
     text-align: center;
-}
+}  
 
 header {
     background-color: #333;
     color: white;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,21 +21,7 @@ header {
     border: none;
     color: white;
     cursor: pointer;
-    display: block;
-}
-.card {
-    background-color: rgb(243, 243, 243);
-    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 0.5em;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.label {
-    color: black;
-    font-weight: 700;
+    display: block; /* Always show on small screens */
 }
 
 nav {
@@ -45,7 +30,8 @@ nav {
     left: 0;
     width: 100%;
     background-color: #333;
-    display: none; /* Initially hidden */
+    display: none; /* Hide by default */
+    z-index: 1000;
 }
 
 nav ul {
@@ -56,8 +42,8 @@ nav ul {
     width: 100%;
 }
 
-nav ul.show {
-    display: flex;
+nav.show {
+    display: flex; /* Show when toggled */
 }
 
 nav ul li {
@@ -65,34 +51,85 @@ nav ul li {
     text-align: center;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
 nav ul li a:hover {
     background-color: white;
     color: black;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-.co {
+/* Responsive Layout */
+section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2px;
-    padding: 2px;
+    gap: 10px;
+    padding: 10px;
 }
 
-.gallery img {
-    width: 85%;
-    border-radius: 10px;
+.card {
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
+.card h2 {
+    font-family: "Sour Gummy", serif;
+    line-height: 1.2;
+}
+
+p {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 90%;
+    font-family: "IBM Plex Mono", serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Fix */
 footer {
     background-color: #333;
     color: white;
-    padding: 5px;
-    position: fixed;
+    padding: 10px;
+    position: relative; /* Prevents fixed footer blocking content */
     width: 100%;
     bottom: 0;
+}
+
+/* Tablet and Desktop */
+@media only screen and (min-width: 768px) {
+    nav {
+        display: block; /* Always show nav on larger screens */
+        position: static;
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

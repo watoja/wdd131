@@ -5,14 +5,15 @@ document.getElementById("year").innerHTML = currentYear;
 const lastModified = document.lastModified;
 document.getElementById("modification").innerHTML = lastModified;
 
-// toggle menu in small view
-const mainNav = document.querySelector('.navigation');
-const navbutton = document.querySelector('#menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-btn");
+  const nav = document.querySelector("nav");
 
-navbutton.addEventListener('click', () => {
-  mainNav.classList.toggle('show');
-  navbutton.classList.toggle('show');
+  menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("show");
+  });
 });
+
 
 //Data
 const temples = [

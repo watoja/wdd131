@@ -1,49 +1,73 @@
- /* Hide hamburger on large screens */
- @media (min-width: 700px) {
+@media only screen and (min-width: 768px) {
+
+    /* Header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Hide the hamburger menu on large screens */
     #menu-btn {
         display: none;
     }
-/* Reset positioning  so that nav*/
-    nav {
-        position: static; 
-        width: auto;
-        background: none;
 
+    /* Show navigation by default on large screens */
+    nav {
+        display: block !important;
+        position: static;
+        background: none;
     }
 
     nav ul {
-        display: flex; 
-        flex-direction: row;
-        background: none;
+        display: flex;
         justify-content: center;
+        gap: 20px;
     }
 
     nav ul li {
-        margin: 15px;
-        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px 15px;
     }
 
     nav ul li a:hover {
-        background-color: black;
-        color: white; /* Dark text on hover */
-        padding: 5px;
+        background-color: white;
+        color: black;
         border-radius: 5px;
     }
 
-    #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        text-decoration: none;
-        padding: 0.5rem 0.5rem;
-        background-color: #023047;
-        color: white;
-    }
-    menu::before {
-        content: "≡";
-    }
-    
-    .container {
+    /* Grid Layout for Large Screens */
+    section {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
     }
 }

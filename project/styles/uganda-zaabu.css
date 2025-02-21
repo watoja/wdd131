@@ -1,0 +1,289 @@
+
+body {
+    font-family: 'Poppin', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #343a40; /* Dark gray */
+    background-color: #f8f9fa; /* White-ish */
+}
+
+h1, h2, h3 {
+    font-family: 'Bakbak', sans-serif;
+    color: #343a40; /* Dark gray */
+}
+
+.site-name {
+    color: #FFB703; /* Yellow */
+}
+
+.hero p {
+    color: #343a40; /* Dark gray */
+}
+
+header {
+    background-color: #343a40; /* Dark gray header */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+#menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFB703; /* Yellow menu button */
+    padding: 0.5rem;
+    z-index: 2;
+}
+
+nav {
+    background-color: #343a40; /* Dark gray nav */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+nav.active {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFB703; /* Yellow nav links */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: ; /* Yellow hover */
+    color: #343a40; /* Dark gray hover text */
+    letter-spacing: 4px;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5ZCXqhzOJUO4uzwcS_QGHHh7eOV-Vw2ULw&s');
+    background-size: cover;
+    color: white; /* White text on hero */
+    height:100vh;
+    width:100vw;
+}
+
+.highlights, .destinations, .experiences, .contact, .plan {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+#sites-container, #destinations-container, #experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.site, .destination, .experience {
+    border: 1px solid #ced4da; /* Light gray border */
+    padding: 1rem;
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* White-ish background */
+}
+
+.site img, .destination img, .experience img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.contact {
+    padding: 2rem;
+    text-align: center; /* Center content on small screens */
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements */
+    width: 90%; /* Occupy most of the screen width */
+    max-width: 500px; /* Set a maximum width */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact label {
+    margin-bottom: 0.5rem;
+    text-align: left; /* Align labels to the left */
+    width: 100%;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact input[type="submit"] {
+    background-color: #FFB703; /* Yellow submit button */
+    color: #343a40; /* Dark gray text */
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #e6a700; /* Slightly darker yellow on hover */
+}
+
+.contact-info {
+    margin-top: 2rem;
+    text-align: center; /* Center contact info */
+}
+
+.contact-info h3 {
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+
+.plan {
+    padding: 2rem;
+    text-align: center; /* Center content */
+}
+
+.plan h2 {
+    margin-bottom: 1rem;
+}
+
+.planning-steps {
+    display: flex;
+    flex-direction: column; /* Stack steps vertically */
+    gap: 1rem;
+    width: 90%; /* Occupy most of the screen width */
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the steps */
+    text-align: left; /* Align step text to the left */
+}
+
+.planning-steps h3 {
+    margin-bottom: 0.5rem;
+}
+
+.planning-steps p {
+    margin-bottom: 1rem;
+}
+
+.additional-resources {
+    margin-top: 2rem;
+    text-align: center; /* Center resources */
+}
+
+.additional-resources h3 {
+    margin-bottom: 1rem;
+}
+
+.additional-resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.additional-resources li {
+    margin-bottom: 0.5rem;
+}
+
+.additional-resources a {
+    color: #FFB703; /* Yellow link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.additional-resources a:hover {
+    color: #e6a700; /* Slightly darker yellow on hover */
+}
+
+
+.contact-info {
+    margin-top: 2rem;
+    color: #343a40; /* Dark gray */
+}
+
+.planning-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.planning-steps h3 {
+    margin-bottom: 0.5rem;
+    color: #343a40; /* Dark gray */
+}
+
+footer {
+    background-color: #343a40; /* Dark gray footer */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color:#FFB703 ;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #343a40; 
+    background-color: white;
+}

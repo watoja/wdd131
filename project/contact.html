@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Zaabu - Contact Us</title>
+    <link rel="stylesheet" href="styles/uganda-zaabu.css">
+    <link rel="stylesheet" href="styles/uganda-zaabu-large.css" media="(min-width: 769px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="scripts/uganda-zaabu.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Uganda Zaabu</h1>
+        <button id="menu-btn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="uganda-zaabu.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+
+            <p>Have questions about planning your trip to Uganda?  Get in touch with us!</p>
+
+            <form action="submit_contact.php" method="post">  <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p>Email: info@ugandazaabu.com</p>  <p>Phone: +256 7XX XXX XXX</p>  <p>Address: Kampala, Uganda</p> </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="plan.html">Plan Your Trip</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2025 Uganda Zaabu | All rights reserved.</p>
+    </footer>
+</body>
+</html>
